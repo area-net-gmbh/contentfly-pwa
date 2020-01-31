@@ -1,2 +1,100 @@
-# contentfly-pwa
-Synchronisation mit dem Contentfly CMS: Das SDK für Progressive Webapps unterstützt Entwickler bei der Datenhaltung, Synchronisation und Darstellung von Inhalten. 
+![Contentfly CMS](https://www.contentfly-cms.de/file/get/7d937604-23e2-11e8-b76e-00ac10d52400)
+
+# Contentfly
+- **Lizenz**: Duale Lizenz MIT/ Properitär
+- **Webseite**: http://www.contentfly-cms.de
+
+## Die Contentfly Plattform
+
+- **CMS**: https://github.com/area-net-gmbh/contentfly-cms
+- **Ionic SDK**: https://github.com/area-net-gmbh/contentfly-ionic
+- **PWA SDK**: https://github.com/area-net-gmbh/contentfly-pwa
+- **Dokumentation**: https://www.contentfly-cms.de
+
+## Einführung
+
+Mit der Contentfly Plattform können datengetriebene Apps für iOS und Android unter dem Einsatz des Ionic Frameworks inklusive Synchronisations-Anbindung an einen Server entwickelt werden.
+
+Der Server (bzw. das Contentfly CMS) basiert dabei auf PHP und MySQL und kann auf nahezu jedem Standard-Hosting-Provider eingesetzt werden. Das SDK für Ionic unterstützt Entwickler bei der Umsetzung mobiler Apps für iOS und Android mit automatischer Datenhaltung und Synchronisation mit dem Contentfly CMS.
+
+Für die Entwicklung von Apps auf Basis des Contentfly CMS  sind folgende Kenntnisse erforderlich:
+
+- **CMS**: PHP und optimalerweise Doctrine und MySQL
+- **Ionic**: Typescript/Javascript und Kenntnisse im Ionic Framework
+- **PWA**: Typescript/Javascript und Kenntnisse im Ionic Framework
+
+# PWA SDK
+
+## Installation
+
+**Installation per NPM**
+`npm install contentfly-pwa`
+
+**src/app/app.module.ts**
+```
+...
+import {ContentflyModule} from "contentfly-pwa";
+
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    ContentflyModule.forRoot({
+      baseUrl: 'https://url.zum-contentfly-cms.de/'
+    })
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp
+  ],
+  providers: [
+    ...
+  ]
+})
+export class AppModule {}
+
+```
+
+Weiterführende Dokumentation unter https://www.contentfly-cms.de/docs/pwa
+
+# Modulinformationen
+
+Erstellen des Modules
+`npm run build`
+
+Veröffentlichen des Modules
+`npm publish`
+
+# Lizenz
+
+Die Contentfly Plattform ist unter eine dualen Lizenz (MIT und properitär) verfügbar. Die genauen Lizenzbedingungen sind in der Datei _LICENCE_ zu finden.
+
+# Die Contentfly Plattform ist ein Produkt der AREA-NET GmbH
+
+AREA-NET GmbH
+Werbeagentur, Internetagentur und App Agentur
+Öschstrasse 33
+73072 Donzdorf
+
+**Kontakt**
+
+- Telefon: 0 71 62 / 94 11 40
+- Telefax: 0 71 62 / 94 11 18
+- http://www.area-net.de
+- http://www.app-agentur-bw.de
+- http://www.Contentfly-cms.de
+
+
+**Geschäftsführer**
+Gaugler Stephan, Köller Holger, Schmid Markus
+
+**Handelsregister**
+HRB 541303 Ulm
+Sitz der Gesellschaft: Donzdorf
+UST-ID: DE208051892
+
+
+
+

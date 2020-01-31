@@ -1,0 +1,33 @@
+{
+  "name": "contentfly-pwa",
+  "version": "0.1.0",
+  "description": "Contentfly SDK for Progressive Webapps",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ngc": "ngc",
+    "build": "rm -rf dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/area-net-gmbh/contentfly-pwa.git"
+  },
+  "keywords": [],
+  "author": "AREA-NET GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/area-net-gmbh/contentfly-pwa/issues"
+  },
+  "homepage": "https://github.com/area-net-gmbh/contentfly-ionic#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "typescript": "~3.4.3",
+    "webpack": "^4.41.2"
+  }
+}
